@@ -1,9 +1,11 @@
-const Button = () => {
+import _Button from '@mui/material/Button';
+
+const Button = ({ children }) => {
   return (
-    <div>
-      <h2>{'Button'}</h2>
-      <p>{'Find me in ./web/src/components/Button/Button.tsx'}</p>
-    </div>
+    <_Button variant="contained" sx={{
+      // width: 300
+      textTransform: 'initial'
+    }}>{ children }</_Button>
   )
 }
 
